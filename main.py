@@ -131,6 +131,7 @@ yeni_resim.save('new_image.jpeg')
 """
 
 
+
 """Fraktalın uygulanması
 nboyut= resim.boyut[0]
 mboyut= resim.boyut[1]
