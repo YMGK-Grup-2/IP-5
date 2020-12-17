@@ -131,88 +131,88 @@ yeni_resim.save('new_image.jpeg')
 """
 
 
-# Fraktalın uygulanması
-# nboyut= resim.boyut[0]
-# mboyut= resim.boyut[1]
-#
-# fraktal = []
-# say = 0
-# Y = 0
-# X = 0
-# ortanokta = math.floor(math.sqrt(nboyut * nboyut)) - 1
-# Adimlimit = ortanokta * 2 + 1, Y, X
-# ortaknt = True
-# Z = 0
-#
-# for Z in Adimlimit:
-#     adimmod = Z % ortanokta
-# if ortaknt:
-#     if (Z % 2) == 0:
-#         X = mboyut - 1
-#         Y = Z
-# for i in range(0, Z + 1):
-#
-#     fraktal[say] = bit_listesi[Y][x]
-#     say += 1
-#     X -= 1
-#     Y -= 1
-# else:
-#
-#     X = mboyut - 1 - Z
-#     Y = 0
-#
-# for i in Z + 1:
-#     fraktal[say] = bit_listesi[Y][X]
-#     say += 1
-#     X += 1
-#     Y += 1
-#
-# if (Z == ortanokta):
-#
-#     ortaknt = False
-#
-# else:
-#
-#     if (adimmod % 2 == 0):
-#
-#         if (say == nboyut * mboyut - 1):
-#
-#             X = 0
-#             Y = nboyut - 1
-#             adimmod = ortanokta
-#
-#         else:
-#
-#             X = 0
-#             Y = adimmod
-#
-# for i in (ortanokta - adimmod + 1):
-#
-#     fraktal[say] = bit_listesi[Y][X]
-#     say += 1
-#     X += 1
-#     Y += 1
-# else:
-#
-#     if (say == nboyut * mboyut - 1):
-#
-#         X = 0
-#         Y = nboyut - 1
-#         adimmod = ortanokta
-#
-#     else:
-#
-#         X = mboyut - adimmod
-#         Y = nboyut - 1
-#
-# for i in (ortanokta - adimmod + 1):
-#     fraktal[say] = bit_listesi[Y][X]
-#     say += 1
-#     X -= 1
-#     Y -= 1
-#
-# yeni_piksel_listesi = resim.bit_piksel_donusumu(fraktal)
-#
-# yeni_resim = resim.resim_olusturma(yeni_piksel_listesi)
-# yeni_resim.save('new_image.jpeg')
 
+"""Fraktalın uygulanması
+nboyut= resim.boyut[0]
+mboyut= resim.boyut[1]
+
+fraktal = []
+say = 0
+Y = 0
+X = 0
+ortanokta = math.floor(math.sqrt(nboyut * nboyut)) - 1
+Adimlimit = ortanokta * 2 + 1, Y, X
+ortaknt = True
+Z = 0
+
+for Z in Adimlimit:
+    adimmod = Z % ortanokta
+if ortaknt:
+    if (Z % 2) == 0:
+        X = mboyut - 1
+        Y = Z
+for i in range(0, Z + 1):
+
+    fraktal[say] = bit_listesi[Y][x]
+    say += 1
+    X -= 1
+    Y -= 1
+else:
+
+    X = mboyut - 1 - Z
+    Y = 0
+
+for i in Z + 1:
+    fraktal[say] = bit_listesi[Y][X]
+    say += 1
+    X += 1
+    Y += 1
+
+if (Z == ortanokta):
+
+    ortaknt = False
+
+else:
+
+    if (adimmod % 2 == 0):
+
+        if (say == nboyut * mboyut - 1):
+
+            X = 0
+            Y = nboyut - 1
+            adimmod = ortanokta
+
+        else:
+
+            X = 0
+            Y = adimmod
+
+for i in (ortanokta - adimmod + 1):
+
+    fraktal[say] = bit_listesi[Y][X]
+    say += 1
+    X += 1
+    Y += 1
+else:
+
+    if (say == nboyut * mboyut - 1):
+
+        X = 0
+        Y = nboyut - 1
+        adimmod = ortanokta
+
+    else:
+
+        X = mboyut - adimmod
+        Y = nboyut - 1
+
+for i in (ortanokta - adimmod + 1):
+    fraktal[say] = bit_listesi[Y][X]
+    say += 1
+    X -= 1
+    Y -= 1
+
+yeni_piksel_listesi = resim.bit_piksel_donusumu(fraktal)
+
+yeni_resim = resim.resim_olusturma(yeni_piksel_listesi)
+yeni_resim.save('new_image.jpeg')"""
